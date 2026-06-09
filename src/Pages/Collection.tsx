@@ -117,7 +117,7 @@ const Collection = ({ search }: SearchProps) => {
 
                                 {/* Buttons */}
                                 <div className="flex gap-3 mt-8">
-                                    <button className="flex-1 py-3 bg-yellow-400 rounded-2xl" onClick={()=>addToCart(product)}>
+                                    <button className="flex-1 py-3 bg-yellow-400 rounded-2xl" onClick={() => addToCart({ ...product, price: Number(product.price) })}>
                                         Add to Cart
                                     </button>
                                     <button className="flex-1 py-3 bg-red-500 text-white rounded-2xl">
